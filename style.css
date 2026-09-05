@@ -197,3 +197,8 @@ section.alt{background:var(--ink-2)}
   font-family:var(--serif);font-size:.8rem;letter-spacing:.32em;
   color:#4e4941;text-align:center;margin-top:2rem;
 }
+
+.tool{border:1px solid var(--gold-dim);padding:2.4rem 2rem;margin:2.6rem 0 0;text-align:center}
+.tool .k{font-family:var(--serif);font-size:.74rem;letter-spacing:.5em;text-indent:.5em;color:var(--gold);margin:0 0 1.2rem}
+.tool h3{font-size:1.4rem;margin-bottom:1rem}
+.tool p{color:var(--paper-dim);font-size:.94rem;max-width:520px;margin:0 auto 1.8rem}
