@@ -114,6 +114,12 @@
   els.forEach(function(el){ io.observe(el); });
   setTimeout(showAll, 2500);           /* 念のため：何かの理由で出なかったら全部出す */
   window.addEventListener("beforeprint", showAll);
+  document.addEventListener("visibilitychange", function(){
+    if (!document.hidden) { setTimeout(showAll, 2500); }
+  });
+  window.addEventListener("scroll", function once(){ 
+    window.removeEventListener("scroll", once); setTimeout(showAll, 1200);
+  }, {passive:true});
 })();
 </script>
 
