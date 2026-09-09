@@ -1,7 +1,6 @@
 {
-  "cleanUrls": true,
-  "trailingSlash": false,
   "redirects": [
-    { "source": "/:path*", "destination": "https://tsuioku.vercel.app/:path*", "permanent": false }
+    { "source": "/", "destination": "https://tsuioku.vercel.app/", "permanent": false },
+    { "source": "/(.*)", "destination": "https://tsuioku.vercel.app/$1", "permanent": false }
   ]
 }
